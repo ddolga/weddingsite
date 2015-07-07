@@ -18,11 +18,22 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.10.v20150310</version>
                 <configuration>
+                    <systemProperties>
+                        <systemProperty>
+                            <name>org.mortbay.util.FileResource.checkAliases</name>
+                            <value>true</value>
+                        </systemProperty>
+                    </systemProperties>
+                    <useTestScope>true</useTestScope>
                     <webApp>
                         <contextPath>/${project.artifactId}</contextPath>
+                        <defaultsDescriptor>src/main/webapp/resources/webdefault.xml</defaultsDescriptor>
                     </webApp>
                     <stopKey>jetty-stop</stopKey>
                     <stopPort>25080</stopPort>
+                    <httpConnector>
+                        <port>8080</port>
+                    </httpConnector>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
                 </configuration>
             </plugin>
