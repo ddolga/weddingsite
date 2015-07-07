@@ -1,0 +1,22 @@
+Fonts used in this design;
+
+Font: CAC Champagne, 
+Author: American Greetings Corporation, 
+Url: http://www.fontsquirrel.com/fonts/CAC-Champagne; 
+
+Font: Freebooter Script, 
+Author: Apostrophic Labs, 
+Url: http://www.fontsquirrel.com/fonts/Freebooter-Script; 
+
+Font: Great Vibes, 
+Author: TypeSETit, 
+Url: http://www.fontsquirrel.com/fonts/great-vibes; 
+
+Font: Latin Modern Roman, 
+Author: GUST e-foundry, 
+Url: http://www.fontsquirrel.com/fonts/Latin-Modern-Roman; 
+
+Font: Playfair Display, 
+Author: Claus Eggers Sørensen, 
+Url: http://www.fontsquirrel.com/fonts/playfair-display; 
+
