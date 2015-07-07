@@ -1,0 +1,11 @@
+
+@media (min-width: 768px) {
+    .uk-description-list-horizontal.dn_description_short > dt {
+        width: 80px;
+    }
+    .uk-description-list-horizontal.dn_description_short > dd {
+        margin-left: 80px;
+    }
+}
+
+
