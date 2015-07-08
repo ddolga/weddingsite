@@ -10,11 +10,11 @@
 </head>
 <body>
 
-<div class="uk-container uk-container-center">
+<div class="uk-block uk-container uk-container-center">
 
     <div class="uk-block uk-block-muted">
         <div class="uk-text-center">
-            <h3>Welcome to wedding page for:</h3>
+            <h2>The Wedding Of</h2>
 
             <h1 class>Denis & Nadia</h1>
 
@@ -24,47 +24,55 @@
     <div class="uk-block uk-block-primary uk-contrast">
         <div class="uk-grid uk-grid-divider" data-uk-grid-match>
             <div class="uk-width-1-2">
-                <div class="uk-panel uk-panel-space">
-                    <div class="uk-panel-title uk-text-center">Ceremony</div>
-                    <dl class="uk-description-list-horizontal dn_description_short uk-align-center" style="width:155px">
-                        <dt>Location:</dt>
-                        <dd>Island Park</dd>
-                        <dd>Ann Arbor, MI</dd>
-                        <dt>Time:</dt>
-                        <dd>4:00-6:00 PM</dd>
-                    </dl>
+                <div class="uk-panel uk-text-center uk-text-large">
+                    <h2 class="uk-panel-title"><b>CEREMONY</b></h2>
+
+                    <p>Island Park, Ann Arbor</p>
+
+                    <p>4:00 - 6:00 PM</p>
                 </div>
             </div>
-            <div class="uk-width-1-2 uk-panel-space">
+            <div class="uk-width-1-2 uk-text-large uk-text-center">
                 <div class="uk-panel">
-                    <div class="uk-panel-title uk-text-center">
-                        Reception
-                    </div>
-                    <dl class="uk-description-list-horizontal dn_description_short">
-                        <dt>Location:</dt>
-                        <dd>The Earl Restaurant</dd>
-                        <dd>XXX Washington Street</dd>
-                        <dd>Ann Arbor, MI</dd>
-                        <dt>Time:</dt>
-                        <dd>7:00 PM</dd>
-                    </dl>
+                    <h2 class="uk-panel-title">
+                        <a href="#map_dialog" data-uk-modal><b>RECEPTION</b></a>
+                    </h2>
+
+                    <p>The Earle, Ann Arbor</p>
+
+                    <p>7:00 PM</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="uk-block">
-        <p>Wedding Chronology:</p>
-    </div>
+        <h2 class="dn-block-title">GIFT REGISTRY</h2>
 
+        <div style="width:200px;margin:0 auto;"><a href="http://www.honeyfund.com/wedding/nadiadenis"
+                                                   style="text-align:left;background:url('http://www.honeyfund.com/share/honeyfund3.png') no-repeat;display:block;width:200px;height:100px;text-indent:-9999em;">Visit
+            our honeyfund at Honeyfund.com, the free honeymoon registry</a>
 
-    <div class="uk-block uk-block-secondary">
-        <p>RSVP Form</p>
+            <p style="margin:0;padding:0;font-size:10px;text-align:center;">Get your free <a
+                    href="http://www.honeyfund.com/">cash gift registry</a></p></div>
     </div>
-    <div class="uk-block">
-        <div class="uk-block">
+    <div class="uk-block dn-color-green uk-padding-remove">
+        <h2 class="dn-block-title">RSVP</h2>
+
+        <div class="uk-text-center uk-text-center-small uk-text-muted">please respond by filling out the form</div>
+        <iframe src="http://denisnadia.rsvpify.com/?embed=1" frameborder="0" width="100%" height="400px"></iframe>
+    </div>
+    <div class="uk-block uk-block-secondary dn-padding-20 uk-contrast">
+        <div class="uk-text-center">
+            <p>denisnadia.com | 2015 | <a href="mailto:inbox@photowithmonkey.com">send email</a></p>
         </div>
     </div>
 </div>
-
+<div id="map_dialog" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-large">
+            <iframe width='100%' height='700px' frameBorder='0'
+                    src='https://a.tiles.mapbox.com/v4/ddolgachev.mkj9pc66/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiZGRvbGdhY2hldiIsImEiOiIyYmQyYWNmYWI0Yjg3ZWY3MzY3MDZkYmMxYzI3ODY4ZCJ9.t0ONtCVtN9qTmdOb-Mjs-g'></iframe>
+            <button type="button" class="uk-modal-close uk-close">Close</button>
+    </div>
+</div>
 </body>
 </html>

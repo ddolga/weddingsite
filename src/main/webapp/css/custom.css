@@ -13,6 +13,19 @@
         border-color: rgba(45, 112, 145, .3);
     }
 
+    .uk-block.dn-padding-20{
+        padding:20px;
+    }
+
+    .uk-block.dn-color-green{
+        background-color: lightgreen;
+    }
+
+    .dn-block-title{
+        padding-top:30px;
+        padding-left:30px;
+    }
+
 }
 
 
