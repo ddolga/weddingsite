@@ -3,76 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <title>Denis & Nadia Wedding</title>
-    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/uikit.gradient.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pinyon+Script">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js"></script>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css"/>
 </head>
 <body>
 
-<div class="uk-block uk-container uk-container-center">
 
-    <div class="uk-block uk-block-muted">
-        <div class="uk-text-center">
-            <h2>The Wedding Of</h2>
+<div class="uk-block uk-container uk-block-default uk-container-center uk-padding-remove ">
 
-            <h1 class>Denis & Nadia</h1>
+    <div class="uk-block uk-text-center uk-border-rounded">
+        <img class="uk-align-center" src="images/wedding_invite.png">
 
-            <h2>August 28th, 2015</h2>
-        </div>
+        <h2 class="pinyon">Please, join us to celebrate the wedding of</h2>
+
+        <h1 class="pinyon uk-text-larger">Nadia & Denis</h1>
+
+        <h2 class="pinyon">August 28th, 2015</h2>
     </div>
     <div class="uk-block uk-block-primary uk-contrast">
+        <img class="uk-align-center" src="images/horizontal_trim.png">
         <div class="uk-grid uk-grid-divider" data-uk-grid-match>
-            <div class="uk-width-1-2">
-                <div class="uk-panel uk-text-center uk-text-large">
-                    <h2 class="uk-panel-title"><b>CEREMONY</b></h2>
+            <div class="uk-width-1-2 uk-text-center uk-text-large">
+                <div class="uk-panel ">
+                    <h2 class="uk-panel-title"><i class="uk-icon-heart"></i>&nbsp;<b>CEREMONY</b></h2>
 
                     <p>Island Park, Ann Arbor</p>
 
                     <p>4:00 - 6:00 PM</p>
                 </div>
+                <div class="uk-panel">
+                    <a id="map-ceremony-link"><img class="uk-border-circle" src="images/map_island_park.jpg"></a>
+                </div>
             </div>
             <div class="uk-width-1-2 uk-text-large uk-text-center">
                 <div class="uk-panel">
+                    <!--<div class="uk-panel-badge uk-badge" style="margin-right:20px">Menu</div>-->
                     <h2 class="uk-panel-title">
-                        <a href="#map_dialog" data-uk-modal><b>RECEPTION</b></a>
+                        <i class="uk-icon-cutlery"></i>&nbsp;
+                        <b>RECEPTION</b>
                     </h2>
 
-                    <p>The Earle, Ann Arbor</p>
+                    <p>The Earle, Ann Arbor<a href="public/menu.html" target="_blank"><span style="margin-left:10px"
+                                                                                            class="uk-badge uk-badge-success">Menu</span></a>
+                    </p>
 
                     <p>7:00 PM</p>
                 </div>
+                <div class="uk-panel">
+                    <a id="map-reception-link"><img class="uk-border-circle" src="images/map_earle.jpg"></a>
+                </div>
             </div>
+            <img class="uk-align-center" src="images/horizontal_trim.png">
         </div>
     </div>
+    <div id="map-block" class="uk-block">
+        <div id="map" style="width:100%;height:400px"></div>
+        <button id="closeMapBtn" type="button" style="margin:10px" class="uk-button uk-align-right">Close Map</button>
+    </div>
+    <hr>
     <div class="uk-block">
-        <h2 class="dn-block-title">GIFT REGISTRY</h2>
-
-        <div style="width:200px;margin:0 auto;"><a href="http://www.honeyfund.com/wedding/nadiadenis"
+        <div class="uk-panel pinyon uk-text-center dn-text-large" style="padding-top:20px">
+            <p> We are honored you will share in our special day. Your presence is our gift!<br> We're lucky to already have a home full of everything we need, but you may wish to contribute to our honeymoon!</p>
+        </div>
+        <div style="width:200px;margin:0 auto;padding-top:30px"><a href="http://www.honeyfund.com/wedding/nadiadenis"
                                                    style="text-align:left;background:url('http://www.honeyfund.com/share/honeyfund3.png') no-repeat;display:block;width:200px;height:100px;text-indent:-9999em;">Visit
             our honeyfund at Honeyfund.com, the free honeymoon registry</a>
 
             <p style="margin:0;padding:0;font-size:10px;text-align:center;">Get your free <a
                     href="http://www.honeyfund.com/">cash gift registry</a></p></div>
     </div>
-    <div class="uk-block dn-color-green uk-padding-remove">
-        <h2 class="dn-block-title">RSVP</h2>
-
+    <hr>
+    <div class="uk-block uk-padding-remove uk-border-rounded" style="border:gray 3px dashed;margin:20px">
+        <div class="dn-rsvp-title">RSVP</div>
         <div class="uk-text-center uk-text-center-small uk-text-muted">please respond by filling out the form</div>
         <iframe src="http://denisnadia.rsvpify.com/?embed=1" frameborder="0" width="100%" height="400px"></iframe>
     </div>
     <div class="uk-block uk-block-secondary dn-padding-20 uk-contrast">
         <div class="uk-text-center">
-            <p>denisnadia.com | 2015 | <a href="mailto:inbox@photowithmonkey.com">send email</a></p>
+            <i class="uk-icon-phone"></i>&nbsp;<a class="uk-link" href="tel:1-734-276-0155">phone</a>&nbsp;|&nbsp;<i
+                class="uk-icon-envelope"></i>&nbsp;
+            <a href="mailto:inbox@photowithmonkey.com">email</a>&nbsp;|&nbsp;denisnadia.com&nbsp;|&nbsp;2015&nbsp;|
         </div>
+        <img class="uk-align-center" src="images/large_fleur.png" style="margin-top:30px">
     </div>
 </div>
-<div id="map_dialog" class="uk-modal">
-    <div class="uk-modal-dialog uk-modal-dialog-large">
-            <iframe width='100%' height='700px' frameBorder='0'
-                    src='https://a.tiles.mapbox.com/v4/ddolgachev.mkj9pc66/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiZGRvbGdhY2hldiIsImEiOiIyYmQyYWNmYWI0Yjg3ZWY3MzY3MDZkYmMxYzI3ODY4ZCJ9.t0ONtCVtN9qTmdOb-Mjs-g'></iframe>
-            <button type="button" class="uk-modal-close uk-close">Close</button>
-    </div>
-</div>
+
+<script type="text/javascript">
+
+    L.mapbox.accessToken = 'pk.eyJ1IjoiZGRvbGdhY2hldiIsImEiOiIyYmQyYWNmYWI0Yjg3ZWY3MzY3MDZkYmMxYzI3ODY4ZCJ9.t0ONtCVtN9qTmdOb-Mjs-g';
+    var map = L.mapbox.map('map', 'ddolgachev.mkj9pc66').setView([42.279, -83.744], 15),
+            mapDialog = UIkit.modal("#map_dialog"),
+            locCeremony = null,
+            locReception = null;
+
+    $("#map-block").hide();
+
+    function showMapPanel() {
+        $("#map-block").slideDown();
+    }
+
+    $("#closeMapBtn").click(function () {
+        $("#map-block").slideUp();
+    })
+
+    $("#map-ceremony-link").click(function () {
+
+                showMapPanel();
+
+                if (locCeremony == null) {
+                    locCeremony = [42.29005629771975, -83.72984290122986];
+                    L.marker(locCeremony, {
+                        icon: L.mapbox.marker.icon({
+                                    'marker-size': 'medium',
+                                    'marker-symbol': 'toilets',
+                                    'marker-color': '#f86767'
+                                }
+                        )
+                    }).addTo(map);
+                }
+
+
+                map.panTo(locCeremony);
+            }
+    )
+
+    $("#map-reception-link").click(function () {
+
+                showMapPanel();
+
+                if (locReception == null) {
+                    locReception = [42.280398, -83.749445];
+                    L.marker(locReception, {
+                        icon: L.mapbox.marker.icon({
+                            'marker-size': 'medium',
+                            'marker-symbol': 'restaurant',
+                            'marker-color': '#63b6e5'
+                        })
+                    }).addTo(map);
+                }
+
+                map.panTo(locReception);
+            }
+    )
+
+
+</script>
 </body>
 </html>
