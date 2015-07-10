@@ -106,8 +106,7 @@
 <script type="text/javascript">
 
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGRvbGdhY2hldiIsImEiOiIyYmQyYWNmYWI0Yjg3ZWY3MzY3MDZkYmMxYzI3ODY4ZCJ9.t0ONtCVtN9qTmdOb-Mjs-g';
-    var map = L.mapbox.map('map', 'ddolgachev.mkj9pc66').setView([42.279, -83.744], 15),
-            mapDialog = UIkit.modal("#map_dialog"),
+    var map = null,
             locCeremony = null,
             locReception = null;
 
@@ -115,6 +114,10 @@
 
     function showMapPanel() {
         $("#map-block").slideDown();
+
+        if (map == null) {
+            map = L.mapbox.map('map', 'ddolgachev.mkj9pc66').setView([42.279, -83.744], 15);
+        }
     }
 
     $("#closeMapBtn").click(function () {
