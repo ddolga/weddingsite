@@ -72,6 +72,22 @@
         border: solid 3px white;
     }
 
+    li {
+        padding-left:1.4em;
+    }
+
+    ul,li {
+        list-style: none;
+    }
+
+    ul li::before{
+        font-family:FontAwesome;
+        display:inline-block;
+        content:"\f06c";
+        width:1.4em;
+        margin-left:-1.4em;
+    }
+
 }
 
 
