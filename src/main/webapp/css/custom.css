@@ -2,7 +2,7 @@
 
 
     body{
-        background-color: rgba(111, 101, 114, 0.31);
+        background-color: rgb(192,189,179);
     }
 
     .pinyon {
@@ -21,7 +21,7 @@
     }
 
     .uk-block-primary{
-        background-color: #6f6572;
+        background-color: rgb(137,124,116);
     }
 
     .uk-description-list-horizontal.dn_description_short > dt {
@@ -50,9 +50,6 @@
         padding: 20px;
     }
 
-    .uk-block.dn-color-green {
-        background-color: rgba(111, 101, 114, 0.51);
-    }
 
     .dn-block-title {
         font-family:cursive;
