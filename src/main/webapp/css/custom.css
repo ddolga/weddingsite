@@ -49,15 +49,10 @@
         padding: 20px;
     }
 
-    .dn-map-button {
-        background-color: rgba(111, 101, 114, 0.5);
-        padding: 5px;
-        border:white 2px solid;
-        margin:0px;
-    }
-
-    .dn-map-button > i {
-        color: #eaeaec;
+    #dn-map-button {
+        position: relative;
+        top:-25px;
+        left:-25px;
     }
 
     .dn-block-title {
